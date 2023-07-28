@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Note } from './models/note';
 import { NOTES } from './mock-notes';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NoteService {
-  private selectedNote: Note | null = null;
+  private selectedNoteSubject = new BehaviorSubject<Note | null>(null);
+  selectedNote$ = this.selectedNoteSubject.asObservable();
 
   constructor() { }
 
@@ -17,6 +18,7 @@ export class NoteService {
   }
 
   setSelectedNote(note: Note) {
-    this.selectedNote = note;
+    this.selectedNoteSubject.next(note);
   }
+
 }

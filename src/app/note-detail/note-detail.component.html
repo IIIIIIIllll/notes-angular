@@ -1,1 +1,6 @@
-<p>note-detail works!</p>
+<div class="container">
+    <section class="note" *ngIf="selectedNote">
+        <h2>{{ selectedNote.title }}</h2>
+        <p>{{ selectedNote.text }}</p>
+    </section>
+</div>
