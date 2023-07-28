@@ -1,0 +1,17 @@
+.notes {
+    list-style: none;
+    width: 300px;
+    padding: 20px;
+}
+
+.note {
+    transition: 0.3s ease-in;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.selected {
+    background-color: rgb(42, 42, 233);
+    color: white;
+}

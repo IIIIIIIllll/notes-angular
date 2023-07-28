@@ -1,1 +1,11 @@
-<p>notes-list works!</p>
+<ul class="notes">
+    <li *ngFor="let note of notes">
+        <section 
+            class="note"
+            (click)="onSelect(note)"
+            [class.selected]="note === selectedNote"
+         >
+            <h2>{{ note.title }}</h2>
+        </section>
+    </li>
+</ul>

@@ -16,8 +16,14 @@
 
 .container {
     height: calc(100vh - 100px);
-    background-color: gray;
-    padding: 20px;
+    background-color: whitesmoke;
+    
     display: flex;
     
 }
+
+.vertical-line {
+    width: 5px;
+    background-color: black;
+  }
+  
