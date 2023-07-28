@@ -17,9 +17,7 @@
 .container {
     height: calc(100vh - 100px);
     background-color: whitesmoke;
-    
     display: flex;
-    
 }
 
 .vertical-line {
@@ -27,3 +25,16 @@
     background-color: black;
   }
   
+.input {
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+}
+.add-form {
+    display: flex;
+}

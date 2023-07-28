@@ -7,18 +7,22 @@ import { BehaviorSubject, Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class NoteService {
+  private notes: Note[] = NOTES;
   private selectedNoteSubject = new BehaviorSubject<Note | null>(null);
   selectedNote$ = this.selectedNoteSubject.asObservable();
+
 
   constructor() { }
 
   getNotes(): Observable<Note[]> {
-    const notes = of(NOTES);
-    return notes;
+    return of(this.notes);
   }
 
-  setSelectedNote(note: Note) {
+  setSelectedNote(note: Note): void {
     this.selectedNoteSubject.next(note);
   }
 
+  addNote(note: Note) {
+    this.notes.push(note);
+  }
 }

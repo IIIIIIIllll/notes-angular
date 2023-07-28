@@ -1,6 +1,22 @@
 <header class="notes-header">
     <h2>Мои заметки</h2>
-    <button class="notes-button">Добавить заметку</button>
+    <div class="add-form">
+        <label class="input-label">
+            Заголовок
+            <input class="input" type="text" #title>
+        </label>
+        
+        <label class="input-label">
+            Текст
+            <input class="input" type="text" #text>
+        </label>
+        <button 
+            class="notes-button" 
+            (click)="add(title.value, text.value); title.value=''; text.value=''"
+        >
+            Добавить заметку
+        </button>
+    </div>
 </header>
 
 <main class="container">

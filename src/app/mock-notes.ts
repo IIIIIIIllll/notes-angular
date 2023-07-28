@@ -1,11 +1,11 @@
 import { Note } from './models/note';
 
 export const NOTES: Note[] = [
-    { title: 'BMW', text: 'Luxury and performance in one package.' },
-    { title: 'Toyota', text: 'Reliable and fuel-efficient vehicles.' },
-    { title: 'Ford', text: 'Iconic American carmaker with a wide range of models.' },
-    { title: 'Mercedes-Benz', text: 'Exemplary engineering and opulent comfort.' },
-    { title: 'Audi', text: 'Combining elegance, technology, and performance.' },
-    { title: 'Volkswagen', text: 'Well-built cars with a touch of European flair.' },
-  ];
+  { title: 'BMW', text: 'Роскошь и производительность в одном пакете. Комфортабельные и мощные автомобили для истинных ценителей вождения.' },
+  { title: 'Toyota', text: 'Надежные и экономичные автомобили. Японское качество и непревзойденная долговечность.' },
+  { title: 'Ford', text: 'Иконический американский производитель с широкой линейкой моделей. Прочные и стильные машины для всех случаев жизни.' },
+  { title: 'Mercedes-Benz', text: 'Превосходная инженерия и роскошный комфорт. Машины для тех, кто стремится к совершенству.' },
+  { title: 'Audi', text: 'Сочетание элегантности, технологий и выдающейся производительности. Автомобили для истинных ценителей качества.' },
+  { title: 'Volkswagen', text: 'Надежные и хорошо построенные автомобили с европейским уклоном.' },
+];
   

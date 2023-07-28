@@ -11,6 +11,11 @@
     background-color: white;
 }
 
+.note:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
 .selected {
     background-color: rgb(42, 42, 233);
     color: white;
