@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Note } from './models/note';
-import { NOTES } from './mock-notes';
+import { Note } from '../models/note';
+import { NOTES } from '../mock-notes';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 
 @Injectable({
