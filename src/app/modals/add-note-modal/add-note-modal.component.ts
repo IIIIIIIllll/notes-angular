@@ -14,6 +14,7 @@ export class AddNoteModalComponent {
   constructor(public dialogRef: MatDialogRef<AddNoteModalComponent>) {}
 
   onAddNote(): void {
+    if(!this.title || !this.text) return;
     const newNote: Note = {
       title: this.title,
       text: this.text,

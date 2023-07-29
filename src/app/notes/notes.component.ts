@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NoteService } from '../note.service';
 import { Note } from '../models/note';
+import { AddNoteModalComponent } from '../modals/add-note-modal/add-note-modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-notes',
@@ -9,14 +11,17 @@ import { Note } from '../models/note';
 })
 export class NotesComponent {
 
-  constructor(private noteService: NoteService) {}
+  constructor(private noteService: NoteService, private dialog: MatDialog) {}
   
-  add(title: string, text: string) {
-    if(!title || !text) return;
-    const newNote: Note = {
-      title,
-      text
-    };
-    this.noteService.addNote(newNote);
+  addNewNote(): void {
+    const dialogRef = this.dialog.open(AddNoteModalComponent, {
+      width: '400px',
+    });
+
+    dialogRef.afterClosed().subscribe((newNote: Note) => {
+      if (newNote) {
+        this.noteService.addNote(newNote);
+      }
+    });
   }
 }
