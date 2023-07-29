@@ -1,13 +1,13 @@
 <section class="container">
-  <h2>Add Note</h2>
+  <h2>Добавить заметку</h2>
   <mat-form-field>
-    <input matInput placeholder="Title" [(ngModel)]="title" />
+    <input matInput placeholder="Заголовок" [(ngModel)]="title" />
   </mat-form-field>
   <mat-form-field>
-    <textarea matInput placeholder="Text" [(ngModel)]="text"></textarea>
+    <textarea matInput placeholder="Текст" [(ngModel)]="text"></textarea>
   </mat-form-field>
   <div class="buttons">
-    <button mat-raised-button color="primary" (click)="onAddNote()">Add</button>
-    <button mat-raised-button (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="onAddNote()">Добавить</button>
+    <button mat-raised-button (click)="onCancel()">Отмена</button>
   </div>
 </section>
