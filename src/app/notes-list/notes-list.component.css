@@ -1,22 +1,24 @@
 .notes {
-    list-style: none;
-    width: 500px;
-    padding: 20px;
+  list-style: none;
+  width: 500px;
+  padding: 20px;
+  overflow: scroll;
+  height: 100%;
 }
 
 .note {
-    transition: 0.3s ease-in;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
+  transition: 0.3s ease-in;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
 }
 
 .note:hover {
-    cursor: pointer;
-    background-color: grey;
+  cursor: pointer;
+  background-color: grey;
 }
 
 .selected {
-    background-color: rgb(42, 42, 233);
-    color: white;
+  background-color: rgb(42, 42, 233);
+  color: white;
 }
